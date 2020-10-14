@@ -1,0 +1,26 @@
+[
+    [
+        "ChipType",
+        "E902T"
+    ],
+    [
+        "cleanFlag",
+        true
+    ],
+    [
+        "ProjectType",
+        "HR32Bit"
+    ],
+    [
+        "ToolChain",
+        "gcc-arm-none-eabi-9-2020-q2-update"
+    ],
+    [
+        "TargetPath",
+        "Debug"
+    ],
+    [
+        "Name",
+        "a6"
+    ]
+]
