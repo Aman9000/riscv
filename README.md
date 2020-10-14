@@ -4,7 +4,7 @@ ImplementBranch instructions
 
 ## Goals
 
-- Implement all the instructions in the RISC-V RV32I ISA that correspond to branch operations.
+- Implement all the instructions in the RISC-V RV32I ISA .
 
 ## Given
 
@@ -14,9 +14,7 @@ ImplementBranch instructions
 - IMEM and DMEM are given as modules in the test bench.  You should not change them, but have to follow the read/write timing patterns from them.
 - `cpu_tb.v` is the top test bench - the interface for your CPU code must match this.
 
-## Details on the assignment
 
-You need to implement code for the `cpu` module, that will read in the instructions and execute them.  For assignment 6 (branch) you can assume that the program counter (PC) always increments by 4 on each clock cycle.  For the assignment involving branching, this cannot be assumed and you will have to implement the proper changes in PC.
 
 ### Test cases
 
@@ -29,20 +27,5 @@ $ riscv32-unknown-elf-gcc -c dump.s
 $ riscv32-unknown-elf-objdump -d -Mnumeric,no-aliases dump.o
 ```
 
-### Grading
-
-Assignment 5 (Load/Store) and 6 (Branch) use the same test bench, and only differ in the test cases.  Therefore if you submit the same code for both that is perfectly fine.  However, if you have trouble implementing branching, you are advised to ensure that the Load/Store is correctly implemented so you get full credit for A5.
-
-## HowTo
-
-Fork this repostiry (`EE2003/a5`) into your namespace so that you can edit and push changes.
 
 The `run.sh` script performs all the steps required to compile and test your code.  The `iverilog` compiler is used for running the verilog simulations.
-
-**IMPORTANT**: do not rename files or create new files - otherwise the auto-grader will not recognize it.  Even if you change the `.drone.yml` file, the system will repeat the tests with different configuration files, and your changes will most likely not be recognized then.
-
-Once you have confirmed that your code passes all the tests, commit all the changes, tag it for submission, and push to your repository.
-
-## Date
-
-Due Midnight, (Will be upated), 2020
