@@ -1,6 +1,4 @@
-# Assignment 6
-
-ImplementBranch instructions
+Implement Branch instructions
 
 ## Goals
 
